@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block contant %}
+
+<h2>product adding page</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ product_form }} <!-- Make sure the variable name matches -->
+    <button type="submit">Submit</button> <!-- Add a submit button -->
+</form>
+
+
+
+{% endblock %}
